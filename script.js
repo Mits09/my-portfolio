@@ -15,6 +15,16 @@ navLinks.forEach(link => {
     }
   });
 });
+window.addEventListener("load", () => {
+  document.querySelectorAll(".progress-bar").forEach((bar) => {
+    const value = bar.textContent.trim(); // Get "85%", etc.
+    bar.style.width = "0"; // Start from 0
+    setTimeout(() => {
+      bar.style.width = value; // Animate to actual value
+    }, 100); // small delay so transition applies
+  });
+});
+
 
 // Scroll reveal animations (basic)
 const sections = document.querySelectorAll('.section');
