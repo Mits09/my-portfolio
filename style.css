@@ -43,7 +43,7 @@ h2 {
 .edu-card {
   width: 100%;
   height: 220px;
-  background: #07182E;
+  background: #6c8ebb;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -196,20 +196,20 @@ h2 {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  background: #55bfa8;
+  background: #34907c;
   color: #111;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
   font-size: 18px;
-  box-shadow: 0 0 15px #00ffc8, 0 0 40px rgba(0, 255, 200, 0.2);
+  box-shadow: 0 0 15px #34907c, 0 0 40px rgba(0, 255, 200, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .language-circle:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 25px #00ffc8, 0 0 60px rgba(0, 255, 200, 0.4);
+  box-shadow: 0 0 25px #34907c, 0 0 60px rgba(0, 255, 200, 0.4);
 }
 
 .contact-cards {
@@ -222,10 +222,10 @@ h2 {
 
 .contact-card {
   background: #111;
-  border: 2px solid #64e3c8;
+  border: 2px solid #2aa98e;
   padding: 20px 30px;
   border-radius: 15px;
-  box-shadow: 0 0 15px #64e3c8;
+  box-shadow: 0 0 15px #2aa98e;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   min-width: 250px;
   text-align: center;
@@ -233,12 +233,12 @@ h2 {
 
 .contact-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 0 30px #64e3c8, 0 0 60px rgba(0, 255, 200, 0.4);
+  box-shadow: 0 0 30px #2aa98e, 0 0 60px rgba(0, 255, 200, 0.4);
 }
 
 .contact-card i {
   font-size: 30px;
-  color: #64e3c8;
+  color: #2aa98e;
   margin-bottom: 10px;
 }
 
