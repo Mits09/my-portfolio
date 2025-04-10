@@ -40,14 +40,64 @@ h2 {
   margin-bottom: 30px;
 }
 
-.card {
-  border: none;
-  transition: transform 0.3s;
+.edu-card {
+  width: 100%;
+  height: 220px;
+  background: #07182E;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  transition: 0.3s ease;
+  color: white;
+  font-family: 'Times New Roman', serif;
 }
 
-.card:hover {
-  transform: scale(1.03);
+.edu-card h4 {
+  z-index: 1;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff;
 }
+
+.edu-card p {
+  z-index: 1;
+  font-size: 0.95em;
+  color: #ddd;
+}
+
+.edu-card::before {
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 140%;
+  background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+  animation: rotateBorder 4s linear infinite;
+}
+
+.edu-card::after {
+  content: '';
+  position: absolute;
+  background: #07182E;
+  inset: 5px;
+  border-radius: 15px;
+}
+
+@keyframes rotateBorder {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 
 .timeline {
   position: relative;
